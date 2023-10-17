@@ -1,0 +1,20 @@
+{
+  "name": "prec-extract-node",
+  "version": "1.0.0",
+  "description": "Extract perc document via SOAP web services and write in local folders",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "extract-perc-document": "set run-mode=perc-extract && node index.js",
+    "upload-perc-document": "set run-mode=perc-upload && node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.370.0",
+    "dotenv": "^16.3.1",
+    "file-base64": "^1.0.0",
+    "pdfreader": "^3.0.0",
+    "xmldom": "^0.6.0"
+  }
+}
